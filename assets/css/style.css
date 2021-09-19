@@ -1,0 +1,69 @@
+/* common style for section */
+
+.form-control:focus {
+    outline: 0;
+    border-color: #ddd;
+    box-shadow: 0 0 0 0.2rem rgb(47 164 231 / 0%);
+}
+
+.contant-box {
+    padding: 10px;
+    background-color: #fcfcfc;
+    border: 1px solid rgb(0, 0, 0, .125);
+}
+
+
+/* style for responsive table start */
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-custom thead tr th,
+.table-custom tbody tr td {
+    padding: 10px 25px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.table-custom tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.table-custom thead {
+    color: #fff;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    .table-custom thead {
+        display: none;
+    }
+    .table-custom,
+    .table-custom tbody,
+    .table-custom tbody tr,
+    .table-custom tbody tr td {
+        display: block;
+    }
+    .table-custom tr {
+        margin-bottom: 20px;
+    }
+    .table-custom tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        padding-right: 2px;
+        position: relative;
+    }
+    .table-custom tbody tr td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+    }
+}
+
+
+/* style for responsive table start */

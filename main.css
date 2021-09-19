@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #F0F0F0;
+}
+
+* {
+    font-family: roboto;
+    font-weight: 400;
+}
+
+
+/* Header Style Start */
+
+.header {
+    background-color: #fcfcfc;
+}
+
+
+/* main nav hover effect start */
+
+
+/* .nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #e0e0e0;
+    transition: 0.2s;
+}
+
+.nav-item:hover::after {
+    width: 10%;
+} */
+
+
+/* main nav hover effect end */
+
+.dropdown-menu {
+    left: -50px;
+}
+
+
+/* dropdown animation Start */
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .3s ease-in-out;
+}
+
+.dropdown-menu.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .3s ease-in-out;
+}
+
+
+/* dropdown animation End */
+
+.user-menu-mobile {
+    position: absolute!important;
+}
+
+.navbar {
+    padding: .2rem 1rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+
+/* Header Style End */
+
+
+/* css for icons */
+
+.navbar-nav .nav-item .nav-link .fas {
+    padding: 5px;
+}
+
+
+/* Commone css for section title Start */
+
+.section-title {
+    max-width: 800px;
+    margin: 10px auto 0px auto;
+    padding: 8px;
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.section-title .divider {
+    position: relative;
+    border-bottom: 1px solid #0397ec;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.section-title .divider:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    background: #F0F0F0;
+    margin-top: -15px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.section-title .divider:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    margin-left: -15px;
+    top: 20%;
+    background: #0397ec;
+    margin-top: -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Comone css for section title End */
+
+
+/* style for footer start */
+
+.footer {
+    color: #F0F0F0;
+    background-color: rgba(35, 38, 39, 20);
+    padding: 10px;
+    margin-top: 5em;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+
+/*# sourceMappingURL=style.css.map */
